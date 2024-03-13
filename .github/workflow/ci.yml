@@ -19,6 +19,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: Install nestJs
+        run: npm install -g @nestjs/cli
+
       - name: Install Yarn
         run: npm install -g yarn
 
